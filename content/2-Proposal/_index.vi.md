@@ -27,7 +27,7 @@ Kiến trúc này mang lại thời gian hoạt động (Uptime) lên tới 99.9
 Nền tảng áp dụng kiến trúc AWS kết hợp giữa Serverless (cho Frontend/Storage) và Auto-scaling Instances (cho Backend/Database) trên 2 Availability Zones (AZ A và AZ B).
 
 ### Luồng dữ liệu (Data Flow):
-![Đồ án Website Đặt Sân Bóng Đá](/images/2-Proposal/football_booking_aws_architecture.png)
+![Đồ án Website Đặt Sân Bóng Đá](/images/2-Proposal/anh_kien_truc.png)
 
 - **Truy cập & Bảo mật (1)**: Người dùng truy cập tên miền được phân giải bởi Route 53. Traffic đi qua CloudFront (CDN) và được kiểm duyệt bảo mật bởi AWS WAF.
 
