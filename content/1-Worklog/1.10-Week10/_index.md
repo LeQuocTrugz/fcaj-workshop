@@ -1,57 +1,29 @@
 ---
-title: "Week 10 Worklog"
-date: 2024-01-01
+title: "Worklog Week 10"
+date: 2026-07-08
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
+### Objectives for Week 10:
+
+* Complete the source code of the Football Field Booking web application following the Spring Boot architecture.
+* Integrate social network login and handle security for configuration files (hide sensitive variables like Facebook/Google Client Keys, DB password).
+* Package the entire source code into a single `.jar` file in preparation for deployment.
+
+### Tasks to be implemented this week:
+| Day | Task                                                                                                                                                                                        | Start Date | End Date   | Resources                                 |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| Mon | - **UI Development (View):** <br>&emsp; + Initialize the Spring Boot MVC project structure, integrate the Template Engine (Thymeleaf) and Bootstrap. <br>&emsp; + Build the standard Layout frame for the web (Header, Footer, Menu) and the homepage.                                     | 22/06/2026 | 22/06/2026 |                                           |
+| Tue | - **Logic Processing (Controller & Model):** <br>&emsp; + Code core functions: Render the list of football fields on the UI, process the booking information form submitted by the user. <br>&emsp; + Map data from HTML Forms to Entities to save to the DB.                 | 23/06/2026 | 23/06/2026 |                                           |
+| Wed | - **Security & Login Integration:** <br>&emsp; + Use Spring Security to integrate Google/Facebook login flows (OAuth2). <br>&emsp; + Separate the `application.properties` file, hide Client Keys, Secret Keys, and the DB password in environment variables.                 | 24/06/2026 | 24/06/2026 |                                           |
+| Thu | - **AWS S3 Image Upload Integration:** <br>&emsp; + Code the function (Controller) to receive image files from the user's upload form (field images, avatars) and push them directly to the S3 Bucket using the AWS SDK. <br>&emsp; + Handle displaying S3 image links on the View.                     | 25/06/2026 | 25/06/2026 |                                           |
+| Fri | - **Build & Package Project:** <br>&emsp; + Use Maven to build and bundle both Java code and static folders (HTML, CSS, JS) into a single `.jar` file. <br>&emsp; + Test run the `.jar` file locally via the command line to check for broken UI.      | 26/06/2026 | 26/06/2026 |                                           |
 
 
-### Week 10 Objectives:
+### Achievements in Week 10:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 10 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Application Completion:** Successfully built a seamless web system, from the user interface (Thymeleaf/Bootstrap) to the backend storage logic, all operating smoothly within a single Spring Boot project.
+* **Source Code Security:** No more "hardcoding" sensitive information into the code. Learned how to configure the application to automatically read Facebook, Google, and Database Keys from the operating system's environment variables, keeping the source code safe when pushed to Github.
+* **Successful Packaging:** Successfully packaged the entire web project into a single `.jar` file, with no missing UI file errors during independent execution.

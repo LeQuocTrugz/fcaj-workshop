@@ -1,57 +1,30 @@
 ---
-title: "Week 12 Worklog"
-date: 2024-01-01
+title: "Worklog Week 12"
+date: 2026-07-08
 weight: 2
 chapter: false
-pre: " <b> 1.12. </b> "
+pre: " <b> 1.12 </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
+### Objectives for Week 12:
+
+* Package the entire Football Field Booking project (source code, system design documents) and hand it over to the internship provider.
+* Build and complete the Internship Report (Workshop) page summarizing the entire 3-month learning and working journey.
+* Complete administrative procedures: Request feedback, performance evaluation, and obtain the company's official stamp for the graduation internship confirmation.
+
+### Tasks to be implemented this week:
+
+| Day | Task | Start Date | End Date | Resources |
+| --- | --- | --- | --- | --- |
+| Mon | - **Project Packaging & Handover:** <br>&emsp; + Clean up the source code, double-check security config files. <br>&emsp; + Write a README file with instructions to run the project, hand over the source code and architectural diagram to the Mentor. | 06/07/2026 | 06/07/2026 | |
+| Tue | - **Building the Internship Report Page:** <br>&emsp; + Initialize the framework for the report page as a technical document (using a static site generator framework). <br>&emsp; + Divide the sidebar structure: Worklog, Proposal, Blogs Posted, Participated Events... | 07/07/2026 | 07/07/2026 | | 
+| Wed | - **Finalizing the Report Content:** <br>&emsp; + Import the work data from the previous 11 weeks into the Worklog section. <br>&emsp; + Write the Self-Evaluation and Feedback and Contributions sections. | 08/07/2026 | 08/07/2026 | | 
+| Thu | - **Review & Finalize the Final Report (Workshop):** <br>&emsp; + Run the report page in the local environment (localhost:1313) to check the UI, spell-check, and format. <br>&emsp; + Build and publish the final report. | 09/07/2026 | 09/07/2026 | | 
+| Fri | - **Completing Administrative Procedures:** <br>&emsp; + Meet with the Mentor and Organizing Committee for a summary, feedback, and performance evaluation. <br>&emsp; + Submit the graduation internship form to obtain the company's official confirmation stamp. | 10/07/2026 | 10/07/2026 | | 
 
 
-### Week 12 Objectives:
+### Achievements in Week 12:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 12 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Complete Handover:** Successfully packaged and transferred the entire source code and technical documentation of the Football Field Booking project in a professional manner.
+* **Impressive Report:** Successfully built the Internship Report page following the AWS Document (Workshop) style. Presenting the report as a website not only fully summarizes the 3-month internship journey but also demonstrates the ability to apply technology in practice.
+* **Journey Completed:** Received valuable feedback and advice from the Mentor for future career orientation; simultaneously completed all necessary paperwork and obtained the confirmation stamp for completing the internship at AWS Vietnam's FCAJ program to submit to the university.

@@ -1,57 +1,31 @@
 ---
-title: "Week 11 Worklog"
-date: 2024-01-01
+title: "Worklog Week 11"
+date: 2026-07-08
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
+### Objectives for Week 11:
+
+* Deploy the entire Football Field Booking project from the development environment (Local) to the actual production environment on the AWS ecosystem.
+* Set up a Custom Domain to provide the application with a professional access address.
+* Perform End-to-End Testing, evaluate stability, and finalize the final version of the project.
+
+### Tasks to be implemented this week:
+
+| Day | Task | Start Date | End Date | Resources |
+| --- | --- | --- | --- | --- |
+| Mon | - **Build actual AWS infrastructure:** <br>&emsp; + Create an EC2 virtual server located in the Public Subnet. <br>&emsp; + Initialize RDS MySQL in the Private Subnet to protect data. <br>&emsp; + Ensure the S3 Bucket is ready to store images. | 29/06/2026 | 29/06/2026 | |
+| Tue | - **Configure EC2 environment:** <br>&emsp; + Use SSH to connect to the Linux server, install Java (Amazon Corretto/JDK). <br>&emsp; + Declare environment variables (FB_KEY, GG_KEY, DB_URL, DB_PASS) in the operating system's configuration file. | 30/06/2026 | 30/06/2026 | |
+| Wed | - **Deploy source code to AWS:** <br>&emsp; + Transfer the packaged `.jar` file of the entire web project to the EC2 server. <br>&emsp; + Configure the web application to run stably as a background process. | 01/07/2026 | 01/07/2026 | |
+| Thu | - **Configure Network & Domain:** <br>&emsp; + Finalize Firewall (Security Group) configurations for EC2 and RDS. <br>&emsp; + Register a custom domain and set up DNS records pointing successfully to the Public IP address of the EC2 instance. | 02/07/2026 | 02/07/2026 | |
+| Fri | - **Testing & Finalize project:** <br>&emsp; + Access the system via the official domain, perform UAT testing for the entire business flow (Login, Field Booking, Image Upload). <br>&emsp; + Monitor system logs and finalize the project. | 03/07/2026 | 03/07/2026 | |
 
 
-### Week 11 Objectives:
+### Achievements in Week 11:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 11 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Successful deployment on a real environment:** Completed deploying the Spring Boot MVC project onto the AWS cloud platform. The application operates stably and smoothly 24/7 on the Linux server without interruption.
+* **Professional Domain Integration:** Instead of accessing via a hard-to-remember IP address range, the system has been attached to an official Custom Domain, providing a professional user experience and a complete look similar to an actual commercial product.
+* **Ensure Security & Connection:** System components communicate safely (EC2 connects securely to the private RDS and S3). All security keys (Client Keys) are strictly managed at the operating system level and are not leaked in the source code.
+* **Project Completion:** Passed the final testing steps on the Production environment, officially finalizing the project and concluding the Workforce Bootcamp right on schedule.

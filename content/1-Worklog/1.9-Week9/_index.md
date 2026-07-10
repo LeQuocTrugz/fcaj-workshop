@@ -1,57 +1,25 @@
 ---
-title: "Week 9 Worklog"
-date: 2024-01-01
+title: "Worklog Week 9"
+date: 2026-07-08
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Objectives for Week 9:
 
-### Week 9 Objectives:
+* Brainstorm, discuss with the team, and finalize the topic for the capstone internship project.
+* Analyze requirements, sketch the system architecture diagram on **draw.io**, conduct a review, discuss with the Mentor, and refine it to achieve the most optimal design.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks to be implemented this week:
+| Day | Task                                                                                                                                                                                        | Start Date | End Date   | Resources                                 |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| Mon | - **Idea Generation:** <br>&emsp; + Brainstorm feasible topics. <br>&emsp; + Discuss with the team and officially finalize the topic: **Building a Football Field Booking Management System**. | 15/06/2026 | 15/06/2026 |                                           |
+| Tue | - **Requirement Analysis:** <br>&emsp; + List core features (Search fields, booking, payment, user management). <br>&emsp; + Preliminary design of the Database Schema for the system.                 | 16/06/2026 | 16/06/2026 |                                           |
+| Wed | - **AWS Architecture Design (Draft 1):** <br>&emsp; + Apply learned knowledge to draw the system flow. <br>&emsp; + Discuss with the team to identify errors that need fixing.                 | 17/06/2026 | 17/06/2026 | Draw.io                                   |
+| Thu | - **Design Review & Troubleshooting:** <br>&emsp; + Present the draft diagram to the Mentor and team. <br>&emsp; + **Error Detected:** Incorrect Database security flow and missing secure internal connection Endpoints.                     | 18/06/2026 | 18/06/2026 |                                           |
+| Fri | - **Finalize Overall Architecture:** <br>&emsp; + Revise the diagram: Add S3 Gateway Endpoint and RDS Endpoint. <br>&emsp; + Update the Multi-AZ mechanism for the Database. <br>&emsp; + Finalize the ultimate AWS architecture drawing.      | 19/06/2026 | 19/06/2026 | Draw.io                                   |
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 9 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Achievements in Week 9:
+* **Topic Finalization:** Clearly defined the objectives and scope of the "Football Field Booking System" project, creating a solid stepping stone for the coding phase.
+* **System Design Thinking:** Through the process of "drawing - making mistakes - redrawing", I gained a deeper understanding of why a Gateway Endpoint must be used instead of routing through the Internet, and the importance of placing the Database in a closed Private Subnet. The final AWS architecture diagram was approved by the Mentor and is ready for actual deployment.
