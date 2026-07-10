@@ -1,5 +1,5 @@
 baseURL = "https://LeQuocTrugz.github.io/fcaj-workshop/"
-relativeURLs = false
+relativeURLs = true
 canonifyURLs = false
 defaultContentLanguage = "en"
 
