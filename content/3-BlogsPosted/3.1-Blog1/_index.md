@@ -26,7 +26,7 @@ This article presents how to build an offline-first application with Optimistic 
 - **Practical benefits:** This approach reduces the need to display loading screens, improves performance through faster data access, ensures reliability when the app is offline, and optimizes operational costs.
 - **Conflict Resolution:** The application implements a simple conflict resolution mechanism based on the "first-come, first-served" principle — MongoDB Atlas saves updates in the order they are received, and later updates will overwrite earlier ones. This is a crucial point to consider if your application has a high conflict frequency, which would require more complex strategies.
 
-![Article Illustration](/images/3-Blogs/anh_blogs_1.png)
+![Article Illustration](/fcaj-workshop/images/3-Blogs/anh_blogs_1.png)
 
 **CONCLUSION**
 Combining AWS Amplify, TanStack Query, AppSync, and MongoDB Atlas opens up a practical approach to building offline-first applications without having to build the entire caching infrastructure from scratch. Amplify Hosting provides a git-based workflow that allows for atomic deployment, ensuring that updates are only applied after the entire deployment process is complete.

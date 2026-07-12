@@ -27,7 +27,7 @@ AWS DevOps Agent organizes the incident response process into specialized capabi
 
 All these capabilities rely on one crucial foundation: the Application Topology graph.
 
-![Figure 1: AWS DevOps Agent Incident Response Lifecycle](/images/3-Blogs/hinh1_blog3.jpg)
+![Figure 1: AWS DevOps Agent Incident Response Lifecycle](/fcaj-workshop/images/3-Blogs/hinh1_blog3.jpg)
 
 ## 2. Topology: The Core Foundation
 
@@ -41,7 +41,7 @@ The topology system builds this understanding through:
 
 The result is a continuously learning topology structure. When the agent needs to trace an error or assess the blast radius, it relies on this network. Everything operates within an **Agent Space** — an isolated environment scoped to a specific team or application.
 
-![Figure 2: Topology Structure and Agent Space](/images/3-Blogs/hinh2_blog3.jpg)
+![Figure 2: Topology Structure and Agent Space](/fcaj-workshop/images/3-Blogs/hinh2_blog3.jpg)
 
 ## 3. Triage: Rapid Categorization and Correlation
 
@@ -72,7 +72,7 @@ The agent validates multiple hypotheses in parallel.
 
 Instead of pursuing just one lead, it checks all three: The configuration change only affected logs *(dismissed)*. The payment gateway slowed down *after* the checkout latency spiked -> This is a symptom, not the cause *(dismissed)*. The connection pool hit 94% utilization exactly when the errors began -> **This is the root cause.**
 
-![Figure 3: Parallel Hypothesis Generation and Validation Process](/images/3-Blogs/hinh3_blog3.jpg)
+![Figure 3: Parallel Hypothesis Generation and Validation Process](/fcaj-workshop/images/3-Blogs/hinh3_blog3.jpg)
 
 ## 5. Mitigation: Safe by Default
 
@@ -92,7 +92,7 @@ Based on these analyses, the system provides **targeted recommendations** regard
 
 Engineers can add these recommendations to their backlog or reject them using natural language, allowing the AI to learn for future incidents.
 
-![Figure 4: Providing Prevention Recommendations](/images/3-Blogs/hinh4_blog3.jpg)
+![Figure 4: Providing Prevention Recommendations](/fcaj-workshop/images/3-Blogs/hinh4_blog3.jpg)
 
 ## 7. Conclusion
 

@@ -86,6 +86,6 @@ Tham gia sự kiện **AWS First Cloud AI Journey - Community Day** tại tầng
 
 ### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
 
-![Poster Sự kiện AWS Community Day 2026](/images/4-Event/event-23-5.avif)
+![Poster Sự kiện AWS Community Day 2026](/fcaj-workshop/images/4-Event/event-23-5.avif)
 
-![Hình ảnh tham gia sự kiện 1](/images/4-Event/hinh_minh_chung_23-5.jpg)
+![Hình ảnh tham gia sự kiện 1](/fcaj-workshop/images/4-Event/hinh_minh_chung_23-5.jpg)

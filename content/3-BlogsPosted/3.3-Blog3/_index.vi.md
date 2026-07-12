@@ -27,7 +27,7 @@ AWS DevOps Agent tổ chức quy trình phản hồi sự cố thành các năng
 
 Tất cả các năng lực này đều phụ thuộc vào một nền tảng quan trọng: Đồ thị cấu trúc ứng dụng (Topology graph).
 
-![Hình 1: Vòng đời phản hồi sự cố của AWS DevOps Agent](/images/3-Blogs/hinh1_blog3.jpg)
+![Hình 1: Vòng đời phản hồi sự cố của AWS DevOps Agent](/fcaj-workshop/images/3-Blogs/hinh1_blog3.jpg)
 
 ## 2. Topology: Nền tảng cốt lõi
 
@@ -41,7 +41,7 @@ Hệ thống topology xây dựng sự hiểu biết này thông qua:
 
 Kết quả là một cấu trúc topology được học hỏi liên tục. Khi tác tử cần truy xuất lỗi hoặc đánh giá phạm vi ảnh hưởng (blast radius), nó sẽ dựa vào mạng lưới này. Mọi thứ hoạt động trong một **Agent Space** — một không gian độc lập được khoanh vùng cho từng team hoặc ứng dụng cụ thể.
 
-![Hình 2: Cấu trúc Topology và Agent Space](/images/3-Blogs/hinh2_blog3.jpg)
+![Hình 2: Cấu trúc Topology và Agent Space](/fcaj-workshop/images/3-Blogs/hinh2_blog3.jpg)
 
 ## 3. Triage: Phân loại và Tương quan nhanh chóng
 
@@ -72,7 +72,7 @@ Tác tử xác thực nhiều giả thuyết song song.
 
 Thay vì chạy theo một hướng, nó kiểm tra cả 3: Thay đổi cấu hình chỉ là về log *(loại)*. Cổng thanh toán chậm sau khi độ trễ checkout bắt đầu -> Đây là triệu chứng, không phải nguyên nhân *(loại)*. Connection pool đạt 94% ngay thời điểm bắt đầu lỗi -> **Đó chính là root cause.**
 
-![Hình 3: Quá trình tạo và xác thực giả thuyết song song](/images/3-Blogs/hinh3_blog3.jpg)
+![Hình 3: Quá trình tạo và xác thực giả thuyết song song](/fcaj-workshop/images/3-Blogs/hinh3_blog3.jpg)
 
 ## 5. Mitigation: An toàn là trên hết (Safe by default)
 
@@ -92,7 +92,7 @@ Dựa trên các phân tích này, hệ thống sẽ đưa ra những **khuyến
 
 Kỹ sư có thể thêm các khuyến nghị này vào backlog hoặc từ chối chúng bằng ngôn ngữ tự nhiên để AI học hỏi cho những lần sau.
 
-![Hình 4: Đưa ra các khuyến nghị Prevention](/images/3-Blogs/hinh4_blog3.jpg)
+![Hình 4: Đưa ra các khuyến nghị Prevention](/fcaj-workshop/images/3-Blogs/hinh4_blog3.jpg)
 
 ## 7. Kết luận
 

@@ -49,7 +49,7 @@ This allows other cloud service providers to implement support for AWS Interconn
 
 ## Security Architecture and Maximum Resiliency
 
-![Figure 1: AWS Interconnect – Multicloud Architecture with Maximum Resiliency Configuration](/images/3-Blogs/hinh1_blog2.jpg)
+![Figure 1: AWS Interconnect – Multicloud Architecture with Maximum Resiliency Configuration](/fcaj-workshop/images/3-Blogs/hinh1_blog2.jpg)
 *(A logical connection is mapped by AWS into multiple physical connections across two Interconnection Facilities to increase fault tolerance, load balancing, and security)*
 
 ### 4-way Resiliency
@@ -65,7 +65,7 @@ On the AWS side, a Direct Connect Gateway (DXGW) is used as a logical attach poi
 
 ## Deployment Process with a Turnkey Experience
 
-![Figure 2: AWS Interconnect Deployment Process](/images/3-Blogs/hinh2_blog2.jpg)
+![Figure 2: AWS Interconnect Deployment Process](/fcaj-workshop/images/3-Blogs/hinh2_blog2.jpg)
 *(Users create a connection on the AWS Console, authenticate using an Activation Key, and the Cloud Provider automatically completes the connection provisioning)*
 
 - **Step 1:** The customer creates a new Interconnect on the AWS Management Console.

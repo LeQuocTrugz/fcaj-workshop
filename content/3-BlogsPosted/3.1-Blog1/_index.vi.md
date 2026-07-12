@@ -26,7 +26,7 @@ Bài viết này trình bày cách xây dựng một ứng dụng offline-first 
 - **Lợi ích thực tiễn mang lại:** Cách tiếp cận này giúp giảm nhu cầu hiển thị loading screen, cải thiện hiệu suất nhờ truy cập dữ liệu nhanh hơn, đảm bảo độ tin cậy khi ứng dụng offline, và tối ưu chi phí vận hành.
 - **Xử lý xung đột dữ liệu (Conflict Resolution):** Ứng dụng triển khai cơ chế giải quyết xung đột đơn giản theo nguyên tắc "first-come first-served" — MongoDB Atlas lưu các cập nhật theo thứ tự nhận được, và bản cập nhật đến sau sẽ ghi đè bản trước. Đây là điểm cần cân nhắc kỹ nếu ứng dụng của bạn có tần suất xung đột cao, khi đó cần các chiến lược phức tạp hơn.
 
-![Ảnh minh họa bài viết](/images/3-Blogs/anh_blogs_1.png)
+![Ảnh minh họa bài viết](/fcaj-workshop/images/3-Blogs/anh_blogs_1.png)
 
 **KẾT LUẬN**
 Việc kết hợp AWS Amplify, TanStack Query, AppSync và MongoDB Atlas mở ra một hướng tiếp cận thực tế để xây dựng ứng dụng offline-first mà không cần phải tự xây dựng toàn bộ hạ tầng caching từ đầu. Amplify Hosting cung cấp git-based workflow cho phép atomic deployment, đảm bảo các cập nhật chỉ được áp dụng sau khi toàn bộ quá trình deploy hoàn tất.

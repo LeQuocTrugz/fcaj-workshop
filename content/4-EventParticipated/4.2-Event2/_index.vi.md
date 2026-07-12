@@ -77,4 +77,4 @@ Tham gia sự kiện Meetup vào ngày 06/06/2026 là một trải nghiệm côn
 
 ### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
 
-![Hình ảnh tham gia sự kiện 1](/images/4-Event/hinh_minh_chung_6-6.jpg) 
+![Hình ảnh tham gia sự kiện 1](/fcaj-workshop/images/4-Event/hinh_minh_chung_6-6.jpg) 

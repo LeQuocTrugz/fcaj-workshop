@@ -29,7 +29,7 @@ The platform applies an AWS architecture combining Serverless (for Frontend/Stor
 
 **Data Flow:**
 
-![Sports Field Booking System Project](/images/2-Proposal/football_booking_aws_architecture.png)
+![Sports Field Booking System Project](/fcaj-workshop/images/2-Proposal/anh_kien_truc.png)
 
 - **Access & Security (1)**: Users access the domain resolved by Route 53. Traffic passes through CloudFront (CDN) and is securely inspected by AWS WAF.
 - **Frontend (3)**: CloudFront retrieves static UI data (ReactJS/Vue/HTML...) from the FE Static S3 bucket.

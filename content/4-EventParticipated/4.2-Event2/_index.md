@@ -77,4 +77,4 @@ Participating in the Meetup event on June 6, 2026, was a highly valuable technol
 
 ### Event Photos
 
-![Event photo 1](/images/4-Event/hinh_minh_chung_6-6.jpg) 
+![Event photo 1](/fcaj-workshop/images/4-Event/hinh_minh_chung_6-6.jpg) 

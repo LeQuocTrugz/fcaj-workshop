@@ -8,10 +8,10 @@ pre: " <b> 2. </b> "
 
 Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn dự tính sẽ làm.
 
-# Đồ án Website Đặt Sân Bóng Đá
+# Đồ án Website Đặt Sân Thể Thao
 ## Giải pháp Triển khai Kiến trúc AWS High Availability & Scalable
 ### 1. Tóm tắt điều hành
-Hệ thống Đặt sân bóng đá (Sports Field Booking System) được thiết kế nhằm cung cấp một nền tảng web ổn định, bảo mật và có tính sẵn sàng cao cho người dùng. Nền tảng sử dụng kiến trúc AWS với việc tách biệt hoàn toàn Frontend (tĩnh) và Backend (động), tận dụng khả năng tự động mở rộng (Auto Scaling) trải dài trên nhiều Availability Zones (Multi-AZ). Giải pháp này giúp hệ thống luôn hoạt động trơn tru ngay cả trong các khung giờ cao điểm, tối ưu hóa chi phí vận hành và đảm bảo an toàn dữ liệu với Amazon RDS và các lớp bảo mật chuyên sâu như AWS WAF.
+Hệ thống Đặt sân Thể Thao (Sports Field Booking System) được thiết kế nhằm cung cấp một nền tảng web ổn định, bảo mật và có tính sẵn sàng cao cho người dùng. Nền tảng sử dụng kiến trúc AWS với việc tách biệt hoàn toàn Frontend (tĩnh) và Backend (động), tận dụng khả năng tự động mở rộng (Auto Scaling) trải dài trên nhiều Availability Zones (Multi-AZ). Giải pháp này giúp hệ thống luôn hoạt động trơn tru ngay cả trong các khung giờ cao điểm, tối ưu hóa chi phí vận hành và đảm bảo an toàn dữ liệu với Amazon RDS và các lớp bảo mật chuyên sâu như AWS WAF.
 
 ### 2. Tuyên bố vấn đề
 ### Vấn đề hiện tại
@@ -27,7 +27,7 @@ Kiến trúc này mang lại thời gian hoạt động (Uptime) lên tới 99.9
 Nền tảng áp dụng kiến trúc AWS kết hợp giữa Serverless (cho Frontend/Storage) và Auto-scaling Instances (cho Backend/Database) trên 2 Availability Zones (AZ A và AZ B).
 
 ### Luồng dữ liệu (Data Flow):
-![Đồ án Website Đặt Sân Bóng Đá](/images/2-Proposal/anh_kien_truc.png)
+![Đồ án Website Đặt Sân Bóng Đá](/fcaj-workshop/images/2-Proposal/anh_kien_truc.png)
 
 - **Truy cập & Bảo mật (1)**: Người dùng truy cập tên miền được phân giải bởi Route 53. Traffic đi qua CloudFront (CDN) và được kiểm duyệt bảo mật bởi AWS WAF.
 

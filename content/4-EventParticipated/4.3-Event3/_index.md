@@ -81,6 +81,6 @@ Participating in the FCAJ Community Day at Bitexco Financial Tower was an excell
 ---
 ### Event Photos
 
-![Hình ảnh tham gia sự kiện 1](/images/4-Event/event-27-6.avif) 
+![Hình ảnh tham gia sự kiện 1](/fcaj-workshop/images/4-Event/event-27-6.avif) 
 
-![Hình ảnh tham gia sự kiện 2](/images/4-Event/event-27-6_minhchung.avif)
+![Hình ảnh tham gia sự kiện 2](/fcaj-workshop/images/4-Event/event-27-6_minhchung.avif)
