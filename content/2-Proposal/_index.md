@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-In this section, you need to summarize the contents of the workshop you intend to execute.
-
 # Sports Field Booking System Project
 ## AWS High Availability & Scalable Architecture Deployment Solution
 
