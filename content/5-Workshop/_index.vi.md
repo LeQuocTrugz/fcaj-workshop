@@ -6,28 +6,44 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
+# Triển khai website đặt sân bóng đá SportBooking lên AWS
+
+### [Video demo các chức năng của website](<https://drive.google.com/file/d/1-0sFCHzJM-VBLlGwRa8S51IZn340tMVN/view?usp=drive_link>)
+
+#### Phạm vi báo cáo
+
+Báo cáo này trình bày quá trình đã triển khai ứng dụng **SportBookingSystem** lên AWS theo mô hình production cơ bản. Website được công bố qua domain HTTPS; lưu lượng đi qua Route 53 và Application Load Balancer; ứng dụng Spring Boot chạy trên EC2 trong private subnet; dữ liệu nghiệp vụ lưu tại RDS MySQL; artifact và ảnh upload lưu trong S3; cấu hình nhạy cảm được quản lý bằng Secrets Manager.
+
+Nội dung được sắp xếp theo thứ tự tài nguyên đã được khởi tạo: chuẩn bị source code; xây dựng mạng và bảo mật; tạo S3 và tải artifact; tạo RDS; lưu cấu hình trong Secrets Manager; cấp quyền IAM; triển khai EC2, ALB và Auto Scaling Group; cấu hình DNS/HTTPS; thiết lập giám sát; cuối cùng thu hồi tài nguyên.
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+Các ảnh minh chứng không hiển thị DB password, OAuth client secret, token, access key hoặc secret value. Báo cáo chỉ giữ lại tên tài nguyên, Region, trạng thái, port, nguồn Security Group và các cấu hình không nhạy cảm.
 {{% /notice %}}
 
+#### Kiến trúc triển khai
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
-
-#### Tổng quan
-
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
-
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
-
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+| Thành phần | Vai trò |
+|---|---|
+| Route 53 | Quản lý DNS cho `sport.younglilliu.id.vn` và trỏ record Alias về ALB. |
+| AWS Certificate Manager | Cấp chứng chỉ TLS để bật HTTPS trên ALB. |
+| Application Load Balancer | Nhận HTTP/HTTPS public, redirect HTTP sang HTTPS và forward request vào Target Group. |
+| Auto Scaling Group + EC2 | Chạy file jar Spring Boot trong private app subnet và thay instance khi rollout. |
+| Amazon RDS for MySQL | Lưu dữ liệu ứng dụng trong private DB subnet. |
+| Amazon S3 | Lưu artifact jar release và file ảnh upload của website. |
+| Secrets Manager | Lưu DB URL, DB username/password, domain, cấu hình S3 và OAuth. |
+| IAM Role + SSM | Cho EC2 đọc S3/Secrets và quản trị bằng Session Manager, không cần mở SSH. |
+| CloudWatch + SNS | Theo dõi trạng thái vận hành và gửi cảnh báo khi metric/alarm vượt ngưỡng. |
+| CloudFront và AWS WAF | Thành phần trong kiến trúc mục tiêu; đã được khảo sát nhưng chưa đưa vào luồng truy cập chính của phạm vi triển khai này. |
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Kiến trúc](5.1-architecture/)
+2. [Chuẩn bị](5.2-preparation/)
+3. [Mạng và bảo mật](5.3-network/)
+4. [Dữ liệu và phân quyền](5.4-data-access/)
+5. [EC2 và cân bằng tải](5.5-compute/)
+6. [Tên miền và HTTPS](5.6-domain-https/)
+7. [Vận hành](5.7-operations/)
+8. [Dọn dẹp](5.8-resource-cleanup/)
+
+
