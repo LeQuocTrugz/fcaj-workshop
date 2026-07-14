@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trải qua kỳ thực tập trong chương trình **Workforce Bootcamp - First Cloud AI Journey** tại **Công ty TNHH Amazon Web Services Việt Nam** từ **20/04/2024** đến **12/07/2026**, em đã có cơ hội quý giá để chuyển hóa những kiến thức lý thuyết thành kinh nghiệm thực chiến trong lĩnh vực công nghệ đám mây. 
+Trải qua kỳ thực tập trong chương trình **Workforce Bootcamp - First Cloud AI Journey** tại **Công ty TNHH Amazon Web Services Việt Nam** từ **20/04/2026** đến **12/07/2026**, em đã có cơ hội quý giá để chuyển hóa những kiến thức lý thuyết thành kinh nghiệm thực chiến trong lĩnh vực công nghệ đám mây. 
 
 Trong vai trò là một thực tập sinh của chương trình, em đã được tiếp cận chuyên sâu với hệ sinh thái điện toán đám mây và các công nghệ trí tuệ nhân tạo của AWS. Quá trình tham gia các buổi sự kiện, thực hành trên môi trường lab thực tế, cũng như trải nghiệm làm việc nhóm đã giúp em rèn luyện tư duy thiết kế hệ thống và kỹ năng phối hợp với các thành viên khác.
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Throughout my internship in the **Workforce Bootcamp - First Cloud AI Journey** program at **Amazon Web Services Vietnam Company Limited** from **April 20, 2024** to **July 12, 2026**, I had the valuable opportunity to translate theoretical knowledge into practical experience in the field of cloud technology.
+Throughout my internship in the **Workforce Bootcamp - First Cloud AI Journey** program at **Amazon Web Services Vietnam Company Limited** from **April 20, 2026** to **July 12, 2026**, I had the valuable opportunity to translate theoretical knowledge into practical experience in the field of cloud technology.
 
 In my role as an intern in the program, I gained in-depth exposure to the cloud computing ecosystem and artificial intelligence technologies of AWS. Participating in events, practicing in real lab environments, and experiencing teamwork have helped me hone my system design thinking and collaboration skills with other members.
 
